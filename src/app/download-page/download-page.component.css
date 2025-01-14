@@ -1,0 +1,67 @@
+section {
+    height: 100vh;
+}
+
+.content h2{
+    font-size: 20px;
+}
+
+.section-1, .section-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 3%;
+}
+
+.section-1 {
+    background-color: #282c4d;
+    color: white;
+    padding: 0 20% 0 20%;
+}
+
+.section-2 {
+    background-color: white;
+    color:#1d1e28;
+    padding: 0 20% 0 20%;
+}
+
+
+
+.image-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.section-1 .content{
+    width: 100%;
+}
+
+.pattern:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.section-2 .content{
+    width: 50%;
+}
+
+img {
+    width: 50%;
+}
+  
+@media (max-width: 800px) {
+    img {
+        width: 50%;
+    }
+
+    .section-1, .section-2 {
+        padding: 0 10px; /* Add some padding to prevent items from touching the edges */
+    }
+
+    .section-1 .content, .section-2 .content {
+        text-align: left; /* Ensure text is aligned to the left */
+    }
+}

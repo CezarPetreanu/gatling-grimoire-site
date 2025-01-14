@@ -1,0 +1,50 @@
+<section class="section-2">
+    <div class="content">
+        <h1>Mages</h1>
+        <p><b>Scholars, collectors, armies of knights,</b> all started year-long campaigns to record the new spells of the Gatling Grimoire. Now, groups are fighting eachother, using their newfound spells to steal patterns from them and complete their collection.</p>
+        <p><b>Only four, maybe less mages remain.</b> They challenged each other in one last duel to decide who will conquer the Gatling Grimoire.</p>
+    </div>
+    <img src="images/mage.png" alt="Mage">
+</section>
+
+<section class="section-1">
+    <img [src]="currentImage">
+    <div class="content">
+        <h1>Preparing</h1>
+        <p>Gatling Grimoire is a physical tabletop game intended for groups of 2-4 players but it can also be played solo. To run the game, you will need:</p>
+        <br>
+            
+        <h2>{{ currentTitle }}</h2>
+        <p>{{ currentDescription }}</p>
+
+        <nav class="image-button-container">
+            <div class="button-container">
+                <button mat-mini-fab (click)="previousPage()" [disabled]="currentIndex === 0">
+                <mat-icon>arrow_back_ios</mat-icon>
+                </button>
+            </div>
+            <p>{{ currentPage }}/{{ pages.length }}</p>
+            <div class="button-container">
+                <button mat-mini-fab (click)="nextPage()" [disabled]="currentIndex === pages.length - 1">
+                <mat-icon>arrow_forward_ios</mat-icon>
+                </button>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="section-2">
+    <div class="content">
+        <h1>Patterns</h1>
+        <p>Patterns are the attack spells of the Gatling Grimoire.</p>
+        <p>There are 13 unique patterns. Mages must look up the number of their page to find its corresponding pattern.</p>
+    </div>
+    <img [src]="currentPatternImage">
+    <div class="pattern-list">
+        <ol>
+            <li class="pattern" *ngFor="let title of patternTitles; let i = index" (click)="selectPattern(i)">
+                {{ title }}
+            </li>
+        </ol>
+    </div>
+</section>

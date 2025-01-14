@@ -1,0 +1,22 @@
+<section>
+    <img [src]="currentImage">
+
+    <nav>
+
+        <div class="button-container">
+            <button mat-mini-fab (click)="previousPage()" [disabled]="currentIndex === 0">
+            <mat-icon>arrow_back_ios</mat-icon>
+            </button>
+        </div>
+        <h2>{{ currentTitle }}</h2>
+        <div class="button-container">
+            <button mat-mini-fab (click)="nextPage()" [disabled]="currentIndex === pages.length - 1">
+            <mat-icon>arrow_forward_ios</mat-icon>
+            </button>
+        </div>
+        
+    </nav>
+
+    <p>{{ currentDescription }}</p>
+
+</section>

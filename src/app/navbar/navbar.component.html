@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="navbar">
+
+  <span class="navbar-title">Gatling Grimoire</span>
+
+
+  <nav class="navbar-links">
+    <a (click)="restoreScrollPosition()" mat-button routerLink="/home" routerLinkActive="active-link" ariaCurrentWhenActive="page">Home</a>
+    <a (click)="restoreScrollPosition()" mat-button routerLink="/grimoire" routerLinkActive="active-link" ariaCurrentWhenActive="page"> The Grimoire </a>
+    <a (click)="restoreScrollPosition()" mat-button routerLink="/howtoplay" routerLinkActive="active-link" ariaCurrentWhenActive="page">How to Play</a>
+    <a (click)="restoreScrollPosition()" mat-button routerLink="/download" routerLinkActive="active-link" ariaCurrentWhenActive="page">Download</a>
+    <a (click)="restoreScrollPosition()" mat-button routerLink="/contact" routerLinkActive="active-link" ariaCurrentWhenActive="page">Contact</a>
+  </nav>
+
+</mat-toolbar>

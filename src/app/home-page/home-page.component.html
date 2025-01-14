@@ -1,0 +1,70 @@
+<header>
+    <h1>Gatling Grimoire</h1>
+    <h2>The bullet-dodging tabletop game</h2>
+</header>
+
+<section class="section-1">
+    <img src="images/book.png" alt="Gatling Grimoire Spellbook">
+    <div class="content">
+        <p><b>Gatling Grimoire</b> is a fantasy duelling game in which the players’ dice rolling skills are put to the test against various attacks and spell patterns.</p>
+        <p><b>In a duel</b>, it’s up to your strength and dexterity how you get out of the firefight: you can plunge straight into danger, play it safe, or dodge the bullets in style.</p>
+    </div>
+</section>
+
+<section class="section-2">
+
+    <mat-card class="section-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><b>Explore the Realm</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="images/grimoiresection.png" alt="The Grimoire">
+        <mat-card-content>
+          <p>
+            The game world's history is rich in magic.
+          </p>
+          <p>
+            Discover the lore and inner workings of the Realm, and how the Gatling Grimoire challenged its rules. 
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)="restoreScrollPosition()" mat-button routerLink="/grimoire" routerLinkActive="active-link" ariaCurrentWhenActive="page">The Grimoire</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="section-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><b>Get Started</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="images/getstartedpage.png" alt="Batlle Board">
+        <mat-card-content>
+          <p>
+            Are you prepared to for your last duel?
+          </p>
+          <p>
+            This quick guide will help you set up your first game and get you ready to face the mages.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)="restoreScrollPosition()" mat-button routerLink="/howtoplay" routerLinkActive="active-link" ariaCurrentWhenActive="page">How to Play</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card class="section-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title><b>Play the Demo</b></mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="images/downloadpage.png" alt="Rulebook">
+        <mat-card-content>
+          <p>
+            Try the "Gatling Grimoire" demo for free!
+          </p>
+          <p>
+            The game's journey is still at its beginning. Your feedback will help us shape the future of the Grimoire.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)="restoreScrollPosition()" mat-button routerLink="/download" routerLinkActive="active-link" ariaCurrentWhenActive="page">Download</button>
+        </mat-card-actions>
+    </mat-card>
+
+</section>
