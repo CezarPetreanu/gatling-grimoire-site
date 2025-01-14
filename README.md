@@ -14,7 +14,7 @@ People interested in the game can keep in touch with the development's progress 
 
 # Specifications
 
-The structure and specifications of this project 
+The structure and specifications of this project follows the assignment's guidelines.
 
 ## General structure
 
